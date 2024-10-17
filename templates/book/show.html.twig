@@ -1,0 +1,7 @@
+{# templates/book/show.html.twig #}
+
+<h1>{{ book.title }}</h1>
+<p><strong>Publication Date:</strong> {{ book.publicationDate|date('Y-m-d') }}</p>
+<p><strong>Category:</strong> {{ book.category }}</p>
+<p><strong>Author:</strong> {{ book.author.username }}</p>
+<p><strong>Enabled:</strong> {{ book.enabled ? 'Yes' : 'No' }}</p>
